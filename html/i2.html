@@ -1,0 +1,1502 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>seconde page</title>
+    <link rel="stylesheet" href="/css/style2.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <div class="yo">
+          <header id="hdr">
+            <div class="hg">
+              <span class="heure" id="heure">08:11</span>
+              <span class="icon">
+                <i class="fa-brands fa-whatsapp"></i>
+                <i class="fa-brands fa-telegram"></i>
+                <i class="fa-duotone fa-p"></i>
+                <i class="fa-solid fa-circle"></i>
+              </span>
+            </div>
+            <div class="hd">
+              <span class="icon">
+                <i class="fa-solid fa-rss"></i>
+                <i>LTE<i class="fa-solid fa-signal"></i></i>
+                <i><i class="fa-solid fa-battery-half"></i>65%</i>
+              </span>
+            </div>
+          </header>
+          <div class="loading" id="loading">
+            <div id="progress"></div>
+          </div>
+          <div class="logos">
+            <div class="logo">
+              <img
+                src="https://static.xx.fbcdn.net/rsrc.php/y1/r/4lCu2zih0ca.svg"
+                alt="logo de facebook"
+              />
+            </div>
+            <div class="g">
+              <span class="ii"><i class="fa-solid fa-plus"></i></span>
+              <span class="ii"
+                ><i class="fa-solid fa-magnifying-glass"></i
+              ></span>
+              <span class="ii" id="om"> <i class="fa-solid fa-bars"></i></span>
+            </div>
+          </div>
+          <div class="tout">
+            <span class="i"><i class="fa-solid fa-house"></i></span>
+            <span class="np">15 <sup>+</sup></span>
+            <span class="i"><i class="fa-solid fa-users"></i></span>
+            <span class="i"
+              ><i class="fa-brands fa-facebook-messenger"></i
+            ></span>
+            <span class="mes">3</span>
+            <span class="i"><i class="fa-sharp fa-regular fa-bell"></i></span>
+            <span class="i"><i class="fa-sharp fa-solid fa-tv-music"></i></span>
+            <span class="i"><i class="fa-sharp fa-solid fa-shop"></i></span>
+          </div>
+        </div>
+        <div class="pro">
+          <img src="/img/profil.png" alt="image du profil" />
+          <span class="ell"></span>
+          <input type="file" id="kiki" />
+          <!-- l'input suivant designe le texte a publié -->
+          <input type="text" id="tpb" placeholder="A quoi pensez-vous ?" />
+          <i class="phi">
+            <i class="fa-regular fa-images"></i>
+            <label for="kiki"> Photo </label>
+          </i>
+        </div>
+        <div class="stu">
+          <div class="stup">
+            <img src="/img/c2.jpg" alt="image for statut" id="stat" />
+            <div class="mel">
+              <label for="statut"><span>+</span></label>
+              <p>2 photos récentes</p>
+              <input type="file" id="statut" style="display: none" />
+              <script>
+                let profilePic = document.getElementById("profile-pic");
+                let inputFile = document.getElementById("statut");
+                inputFile.onchange = function (event) {
+                  const file = event.target.files[0];
+                  const reader = new FileReader();
+
+                  reader.onloadend = function () {
+                    stat.src = reader.result;
+                  };
+                  if (file) {
+                    reader.readAsDataURL(file);
+                  }
+                };
+              </script>
+            </div>
+          </div>
+
+          <div class="p1">
+            <img src="/img/s0.jpg" />
+            <span class="nbs">5</span>
+            <span class="non"><p>Angelberg 20</p></span>
+          </div>
+          <div class="p2">
+            <img src="/img/s2.jpg" alt="img1" />
+            <span class="nbs">2</span>
+            <span class="non"><p>Colonel lidsay</p></span>
+          </div>
+          <div class="p3">
+            <img src="/img/st1.jpeg" />
+            <span class="nbs">8</span>
+            <span class="non"><p>Loic le lazarus</p></span>
+          </div>
+          <div class="p4">
+            <img src="/img/s3.jpg" /><span class="nbs">4</span>
+            <span class="non"><p>Temoini indeterminer</p></span>
+          </div>
+        </div>
+        <div class="publication">
+          <div class="profil">
+            <img src="/img/c1.jpg" alt="profil de l'utilisateur qui publie" />
+            <span class="nomu">Heu Wang Warano</span>
+            <span class="hg"
+              ><a href="#"><i class="fa-solid fa-ellipsis"></i></a
+              ><a href="#"> X</a></span
+            >
+            <span class="sp"
+              >Sponsorisée · <i class="fa-solid fa-earth-africa"></i>
+            </span>
+            <span class="el"></span> <span id="h">1h</span>
+          </div>
+          <div class="message">
+            <p>
+              Joana Divina.... Tu es aussi jolie que la combinaison de tes deux
+              prénoms, aussi Belle que le levé du soleil. Depuis que je te
+              connais jusqu'à présent tu es restée la même personne aussi
+              formidable qu'au départ.
+            </p>
+          </div>
+          <div class="image">
+            <img src="/img/c6.jpg" alt="photo qui est publier" />
+          </div>
+        </div>
+        <div class="comments">
+          <div class="counter">
+            <div class="reactions">
+              <img class="like" src="/img/like.jpg" />
+              <img class="love" src="/img/love.jpg" />
+              <img class="care" src="/img/surpris.jpg" />
+              <span id="likes">257 K</span>
+            </div>
+            <span id="comments">83K commentaires</span>
+            <span class="dot">·</span>
+            <span id="shares">81K partages</span>
+          </div>
+          <div class="bar">
+            <span class="react"
+              ><i class="fa fa-thumbs-o-up"></i>
+              <a class="liked">J'aime</a></span
+            >
+            <span class="react"
+              ><i class="fa fa-comment-o"></i>
+              <span id="co">commentaires</span></span
+            >
+            <span class="react"><i class="fa fa-share"></i> partager</span>
+          </div>
+          <div class="comment">
+            <img src="/img/c6.jpg" />
+            <div class="single-container">
+              <span class="user"> Joyce Divina </span>
+              <span class="text">
+                Je n'aurais jamais pu croire que ma publication aurait un tel
+                nombre de vue et de likes😅. Merci a vous vraiments 😘</span
+              >
+              <img class="love" id="l1" src="/img/love.jpg" />
+            </div>
+            <div class="buttons">
+              <span class="time t2 m">19m</span> <span class="dot">·</span>
+              <span class="action liked" id="ll1">J'aime</span> ·
+              <span class="action je">Repondre</span>
+            </div>
+          </div>
+          <div class="comment ok">
+            <img src="/img/profil.png" />
+            <div class="single-container">
+              <span class="user" id="username"> Joyce Divina </span>
+              <span class="text" id="er">
+                Je n'aurais jamais pu croire que ma publication aurait un tel
+                nombre de vue et de likes😅. Merci a vous vraiments 😘</span
+              >
+              <img class="love" id="l8" src="/img/love.jpg" />
+            </div>
+            <div class="buttons">
+              <span class="time t2 m">A l'instant</span>
+              <span class="dot">·</span>
+              <span class="action liked" id="ll8">J'aime</span> ·
+              <span class="action je">Repondre</span>
+            </div>
+          </div>
+          <div id="c">
+            <div class="comment">
+              <img src="/img/c6.jpg" />
+              <div class="single-container">
+                <span class="user">Tiger Spark </span>
+                <span class="text">
+                  S'il y a un seule mot pour te decrire, je dirait "sublime" 😍
+                </span>
+                <img class="love" id="l2" src="/img/love.jpg" />
+              </div>
+              <div class="buttons">
+                <span class="time t1 m">18m</span> <span class="dot">·</span>
+                <span class="action liked selected" id="ll2">J'aime</span> ·
+                <span class="action je">Repondre</span>
+              </div>
+            </div>
+            <div class="comment reply">
+              <img src="/img/c5.jpg" />
+              <div class="single-container">
+                <span class="user"> Soudays Abbo</span>
+                <span class="text">
+                  Waouh ! Tu t'est enfin decider a utiliser facebook et bam 257k
+                  de likes 😲. felicition cc 🤗🤩
+                </span>
+                <img class="love" id="l3" src="/img/love.jpg" />
+              </div>
+              <div class="buttons">
+                <span class="time t4 m">18m</span> <span class="dot">·</span>
+                <span class="action liked" id="ll3">J'aime</span> ·
+                <span class="action je">Repondre</span>
+              </div>
+            </div>
+            <div class="comment">
+              <img src="/img/c4.jpg" />
+              <div class="single-container">
+                <span class="user"> Miss Azareel</span>
+                <span class="text"> hmm... Salut toi 🥳🥳 </span>
+                <img class="love" id="l4" src="/img/love.jpg" />
+              </div>
+              <div class="buttons">
+                <span class="time t3 m">21m</span> <span class="dot">·</span>
+                <span class="action liked" id="ll4">J'aime</span> ·
+                <span class="action je">Repondre</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <input placeholder="Ecrivez un commentaire..." id="re" required />
+        <button type="submit" id="btnj">
+          <i class="fa-solid fa-paper-plane"></i>
+        </button>
+      </form>
+      <!-- la publication et les commentaire de Soudays abbo commence ici -->
+      <form>
+        <div class="publication">
+          <div class="profil">
+            <img src="/img/c1.jpg" alt="profil de l'utilisateur qui publie" />
+            <span class="nomu">Soudays Abbo</span>
+            <span class="hg"
+              ><a href="#"><i class="fa-solid fa-ellipsis"></i></a
+              ><a href="#"> X</a></span
+            >
+            <span class="sp"
+              >Sponsorisée · <i class="fa-solid fa-earth-africa"></i>
+            </span>
+            <span class="el"></span> <span id="h">1h</span>
+          </div>
+          <div class="message">
+            <p>
+              Ne recevoir jamais aucun chose pour vrai que je ne la connaisse
+              evidement etre-t-elle
+            </p>
+          </div>
+          <div class="image">
+            <img
+              src="/img/publicationsoudays.jpg"
+              alt="photo qui est publier"
+            />
+          </div>
+        </div>
+        <div class="comments">
+          <div class="counter">
+            <div class="reactions">
+              <img class="like" src="/img/like.jpg" />
+              <img class="love" src="/img/love.jpg" />
+              <img class="care" src="/img/surpris.jpg" />
+              <span id="likees">2M</span>
+            </div>
+            <span id="ncs">83K commentaires</span>
+            <span class="dot">·</span>
+            <span id="nps">81K partages</span>
+          </div>
+          <div class="bar">
+            <span class="react"
+              ><i class="fa fa-thumbs-o-up"></i>
+              <a class="liked">J'aime</a></span
+            >
+            <span class="react"
+              ><i class="fa fa-comment-o"></i>
+              <span id="co1">commentaires</span></span
+            >
+            <span class="react"><i class="fa fa-share"></i> partager</span>
+          </div>
+          <div class="comment">
+            <img src="/img/publicationsoudays.jpg" alt="tof de soudays" />
+            <div class="single-container">
+              <span class="user"> Abdourahman abbo</span>
+              <span class="text">
+                C'est forcement avoir les yeux fermer sans jamais tacher de las
+                ouvrir que de vivre sans philosopher !!
+              </span>
+              <img class="love" id="l9" src="/img/love.jpg" />
+            </div>
+            <div class="buttons">
+              <span class="time t2 m">19m</span> <span class="dot">·</span>
+              <span class="action liked" id="ll9">J'aime</span> ·
+              <span class="action je">Repondre</span>
+            </div>
+          </div>
+          <div class="comment ook">
+            <img src="/img/profil.png" alt="tof de l'utilisateur" />
+            <div class="single-container">
+              <span class="user" id="soudaysn">Vous</span>
+              <!-- /*nom d'utlisateur a recuprer dans le locale storage et inserer <ici></ici> -->
+              <!-- ici, il faudras arranger le code script afin d'afficher le commentaire que l'utililisateur va enter -->
+              <span class="text" id="soudaysr">
+                je te parle comme je veux si je veux quand je et tel que je veux
+              </span>
+              <img class="love" id="l8" src="/img/love.jpg" />
+            </div>
+            <div class="buttons">
+              <span class="time t2 m">A l'instant</span>
+              <span class="dot">·</span>
+              <span class="action liked" id="ll8">J'aime</span> ·
+              <span class="action je">Repondre</span>
+            </div>
+          </div>
+          <div id="c1">
+            <div class="comment">
+              <img src="/img/c5.jpg" alt="tof de spark" />
+              <div class="single-container">
+                <span class="user">Tiger Spark </span>
+                <span class="text"> Yes bro ! </span>
+                <img class="love" id="l10" src="/img/love.jpg" />
+              </div>
+              <div class="buttons">
+                <span class="time t1 m">18m</span> <span class="dot">·</span>
+                <span class="action liked selected" id="ll10">J'aime</span> ·
+                <span class="action je">Repondre</span>
+              </div>
+            </div>
+            <div class="comment">
+              <img src="/img/profil.png" />
+              <div class="single-container">
+                <span class="user">Dussy Faouzia</span>
+                <span class="text"> Cc tu as raison !</span>
+                <img class="love" id="l14" src="/img/love.jpg" />
+              </div>
+              <div class="buttons">
+                <span class="time t1 m">18m</span> <span class="dot">·</span>
+                <span class="action liked selected" id="ll14">J'aime</span> ·
+                <span class="action je">Repondre</span>
+              </div>
+            </div>
+            <div class="comment">
+              <img
+                src="/img/c5.jpg"
+                alt="tof de moi que je risque ne pas mettre car je n'en prend jamais"
+              />
+              <div class="single-container">
+                <span class="user">Le simple Warano </span>
+                <span class="text"> cool</span>
+                <img class="love" id="l13" src="/img/love.jpg" />
+              </div>
+              <div class="buttons">
+                <span class="time t1 m">18m</span> <span class="dot">·</span>
+                <span class="action liked selected" id="ll13">J'aime</span> ·
+                <span class="action je">Repondre</span>
+              </div>
+            </div>
+            <div class="comment reply">
+              <img src="/img/c3.jpg" alt="autre tof de soudays" />
+              <div class="single-container">
+                <span class="user">Only Soudays</span>
+                <span class="text"> Yes le philosophe ! </span>
+                <img class="love" id="l11" src="/img/love.jpg" />
+              </div>
+              <div class="buttons">
+                <span class="time t4 m">18m</span> <span class="dot">·</span>
+                <span class="action liked" id="ll11">J'aime</span> ·
+                <span class="action je">Repondre</span>
+              </div>
+            </div>
+            <div class="comment">
+              <img
+                src="/img/c.png"
+                alt="tof de amin que je doit prendre chez soudays"
+              />
+              <div class="single-container">
+                <span class="user"> Amin Sadou</span>
+                <span class="text"> Réné Descartes </span>
+                <img class="love" id="l12" src="/img/love.jpg" />
+              </div>
+              <div class="buttons">
+                <span class="time t3 m">21m</span> <span class="dot">·</span>
+                <span class="action liked" id="ll12">J'aime</span> ·
+                <span class="action je">Repondre</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- le comentaire de soudays se termine ici -->
+
+        <input placeholder="Ecrivez un commentaire..." id="soudaysc" required />
+        <button type="submit" id="soudaysb">
+          <i class="fa-solid fa-paper-plane"></i>
+        </button>
+      </form>
+
+      <!-- la publication de spark commence ici -->
+      <form>
+        <div class="publication">
+          <div class="profil">
+            <img
+              src="/img/ppspark.jpg"
+              alt="profil de l'utilisateur qui publie"
+            />
+            <span class="nomu">Tiger Spark</span>
+            <span class="hg"
+              ><a href="#"><i class="fa-solid fa-ellipsis"></i></a
+              ><a href="#"> X</a></span
+            >
+            <span class="sp"
+              >Sponsorisée · <i class="fa-solid fa-earth-africa"></i>
+            </span>
+            <span class="el"></span> <span id="h">1h</span>
+          </div>
+          <div class="message">
+            <p>
+              Boyalone !!! <br />
+              life is short smile when you still have teeth...
+            </p>
+          </div>
+          <div class="image">
+            <img src="/img/publicationspark.jpg" alt="photo qui est publier" />
+          </div>
+        </div>
+        <div class="comments">
+          <div class="counter">
+            <div class="reactions">
+              <img class="like" src="/img/like.jpg" />
+              <img class="love" src="/img/love.jpg" />
+              <img class="care" src="/img/surpris.jpg" />
+              <span id="likeees">20k</span>
+            </div>
+            <span id="ncsp">83K commentaires</span>
+            <span class="dot">·</span>
+            <span id="npsp">81K partages</span>
+          </div>
+          <div class="bar">
+            <span class="react"
+              ><i class="fa fa-thumbs-o-up"></i>
+              <a class="liked">J'aime</a></span
+            >
+            <span class="react"
+              ><i class="fa fa-comment-o"></i>
+              <span id="co2">commentaires</span></span
+            >
+            <span class="react"><i class="fa fa-share"></i> partager</span>
+          </div>
+          <div class="comment">
+            <img src="/img/publicationsoudays.jpg" alt="tof de soudays" />
+            <div class="single-container">
+              <span class="user"> Abdourahman abbo</span>
+              <span class="text"> Pp </span>
+              <img class="love" id="lfg" src="/img/love.jpg" />
+            </div>
+            <div class="buttons">
+              <span class="time t2 m" id="je25l">21m</span>
+              <span class="dot">·</span>
+              <span class="action liked" id="lfgg">J'aime</span> ·
+              <span class="action je">Repondre</span>
+            </div>
+          </div>
+          <div class="comment ook">
+            <img src="/img/profil.png" alt="tof de l'utilisateur" />
+            <div class="single-container">
+              <span class="user" id="xtre">Rapha</span>
+              <span class="text" id="fret"> </span>
+              <img class="love" id="io8" src="/img/love.jpg" />
+            </div>
+            <div class="buttons">
+              <span class="time t2 m">A l'instant</span>
+              <span class="dot">·</span>
+              <span class="action liked" id="io88">J'aime</span> ·
+              <span class="action je">Repondre</span>
+            </div>
+          </div>
+          <div id="c2">
+            <div class="comment">
+              <img src="/img/c5.jpg" alt="tof de Rapha" />
+              <div class="single-container">
+                <span class="user">Rapha </span>
+                <span class="text"> Cool bb ! 😍 </span>
+                <img class="love" id="po80" src="/img/love.jpg" />
+              </div>
+              <div class="buttons">
+                <span class="time t1 m">18m</span> <span class="dot">·</span>
+                <span class="action liked selected" id="po800">J'aime</span> ·
+                <span class="action je">Repondre</span>
+              </div>
+            </div>
+            <div class="comment">
+              <img src="/img/c5.jpg" alt="tof de petit fereus" />
+              <div class="single-container">
+                <span class="user">Petit fereus</span>
+                <span class="text"> Cool bro continue with the vibes </span>
+                <img class="love" id="tyuie" src="/img/love.jpg" />
+              </div>
+              <div class="buttons">
+                <span class="time t1 m">18m</span> <span class="dot">·</span>
+                <span class="action liked selected" id="tyuiee">J'aime</span> ·
+                <span class="action je">Repondre</span>
+              </div>
+            </div>
+            <div class="comment">
+              <img src="/img/c5.jpg" alt="tof de Maximo victor bluz" />
+              <div class="single-container">
+                <span class="user">Maximo victor bluz </span>
+                <span class="text"> cool</span>
+                <img class="love" id="l513" src="/img/love.jpg" />
+              </div>
+              <div class="buttons">
+                <span class="time t1 m">18m</span> <span class="dot">·</span>
+                <span class="action liked selected" id="l5133">J'aime</span> ·
+                <span class="action je">Repondre</span>
+              </div>
+            </div>
+            <div class="comment reply">
+              <img
+                src="/img/publicationsoudays.jpg"
+                alt="autre tof de soudays"
+              />
+              <div class="single-container">
+                <span class="user">Only Soudays</span>
+                <span class="text"> Yes le philosophe ! </span>
+                <img class="love" id="lytu1" src="love.jpg" />
+              </div>
+              <div class="buttons">
+                <span class="time t4 m">18m</span> <span class="dot">·</span>
+                <span class="action liked" id="lytu11">J'aime</span> ·
+                <span class="action je">Repondre</span>
+              </div>
+            </div>
+            <div class="comment">
+              <img
+                src="/img/c4.jpg"
+                alt="tof de amin que je doit prendre chez soudays"
+              />
+              <div class="single-container">
+                <span class="user"> Amin Sadou</span>
+                <span class="text"> Réné Descartes </span>
+                <img class="love" id="il12" src="/img/love.jpg" />
+              </div>
+              <div class="buttons">
+                <span class="time t3 m">21m</span> <span class="dot">·</span>
+                <span class="action liked" id="il122">J'aime</span> ·
+                <span class="action je">Repondre</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- le comentaire de soudays se termine ici -->
+
+        <!-- la publication de spark commence ici -->
+
+        <input placeholder="Ecrivez un commentaire..." id="gtyr2" required />
+        <button type="submit" id="erte">
+          <i class="fa-solid fa-paper-plane"></i>
+        </button>
+      </form>
+      <!-- la publication et les commentaires d'Azareel commence ici -->
+
+      <form>
+        <div class="publication">
+          <div class="profil">
+            <img
+              src="/img/ppaza.jpg"
+              alt="profil de l'utilisateur qui publie"
+            />
+            <span class="nomu">Areel Mabou</span>
+            <span class="hg"
+              ><a href="#"><i class="fa-solid fa-ellipsis"></i></a
+              ><a href="#"> X</a></span
+            >
+            <span class="sp"
+              >Sponsorisée · <i class="fa-solid fa-earth-africa"></i>
+            </span>
+            <span class="el"></span> <span id="h">1h</span>
+          </div>
+          <div class="message">
+            <p>
+              Quelle longue journée seigneur 🤧. <br />
+              Merci les amies pour la surprise et je vous assures que je n'en
+              resterai pas là. <br />
+              <br />
+              Chacun a son tour🥲
+            </p>
+          </div>
+          <div class="image">
+            <img src="/img/publicationaza.jpg" alt="photo qui est publier" />
+          </div>
+        </div>
+        <div class="comments">
+          <div class="counter">
+            <div class="reactions">
+              <img class="like" src="/img/like.jpg" />
+              <img class="love" src="/img/love.jpg" />
+              <img class="care" src="/img/surpris.jpg" />
+              <span id="likeaza">20k</span>
+            </div>
+            <span id="comaza">83K commentaires</span>
+            <span class="dot">·</span>
+            <span id="pataza">81K partages</span>
+          </div>
+          <div class="bar">
+            <span class="react"
+              ><i class="fa fa-thumbs-o-up"></i>
+              <a class="liked">J'aime</a></span
+            >
+            <span class="react"
+              ><i class="fa fa-comment-o"></i>
+              <span id="cok">commentaires</span></span
+            >
+            <span class="react"><i class="fa fa-share"></i> partager</span>
+          </div>
+          <div class="comment">
+            <img src="/img/ppmaestro.jpg" alt="tof de soudays" />
+            <div class="single-container">
+              <span class="user"> Lė Maętro</span>
+              <span class="text"> Sublime ma belle </span>
+              <img class="love" id="fgtrtt" src="/img/love.jpg" />
+            </div>
+            <div class="buttons">
+              <span class="time t2 m" id="je25l">21m</span>
+              <span class="dot">·</span>
+              <span class="action liked" id="fgtrttt">J'aime</span> ·
+              <span class="action je">Repondre</span>
+            </div>
+          </div>
+          <div class="comment ook">
+            <img src="/img/profil.png" alt="tof de l'utilisateur" />
+            <div class="single-container">
+              <span class="user" id="hfyu">Audrey Dior</span>
+              <span class="text" id="iosk"> </span>
+              <img class="love" id="lgs8" src="/img/love.jpg" />
+            </div>
+            <div class="buttons">
+              <span class="time t2 m">A l'instant</span>
+              <span class="dot">·</span>
+              <span class="action liked" id="lgs88">J'aime</span> ·
+              <span class="action je">Repondre</span>
+            </div>
+          </div>
+          <div id="c3">
+            <div class="comment">
+              <img src="/img/oip.jpg" alt="tof de Audrey Dior" />
+              <div class="single-container">
+                <span class="user">Audrey Dio </span>
+                <span class="text">
+                  Hmm sans rancune cc😁. Mais tu as ete adorable
+                </span>
+                <img class="love" id="kkp" src="/img/love.jpg" />
+              </div>
+              <div class="buttons">
+                <span class="time t1 m">18m</span> <span class="dot">·</span>
+                <span class="action liked selected" id="kkpp">J'aime</span> ·
+                <span class="action je">Repondre</span>
+              </div>
+            </div>
+            <div class="comment">
+              <img src="/img/1713019405250.jpg" alt="tof de Charles CF" />
+              <div class="single-container">
+                <span class="user">Charles CF</span>
+                <span class="text"> Interaissante 😍 </span>
+                <img class="love" id="lgs9" src="/img/love.jpg" />
+              </div>
+              <div class="buttons">
+                <span class="time t1 m">18m</span> <span class="dot">·</span>
+                <span class="action liked selected" id="lgs99">J'aime</span> ·
+                <span class="action je">Repondre</span>
+              </div>
+            </div>
+            <div class="comment">
+              <img src="/img/tui.jpg" alt="tof de Christelle Betcy " />
+              <div class="single-container">
+                <span class="user">Christelle Betcy</span>
+                <span class="text"> 🤣🤣🤣🤣🤣🤣🤣</span>
+                <img class="love" id="juif" src="/img/love.jpg" />
+              </div>
+              <div class="buttons">
+                <span class="time t1 m">18m</span> <span class="dot">·</span>
+                <span class="action liked selected" id="juiff">J'aime</span> ·
+                <span class="action je">Repondre</span>
+              </div>
+            </div>
+            <div class="comment reply">
+              <img src="/img/ppperfect.jpg" alt="autre tof perfect" />
+              <div class="single-container">
+                <span class="user">Neldie Dane</span>
+                <span class="text"> Hmm 😉 </span>
+                <img class="love" id="dfr" src="love.jpg" />
+              </div>
+              <div class="buttons">
+                <span class="time t4 m">18m</span> <span class="dot">·</span>
+                <span class="action liked" id="dfrr">J'aime</span> ·
+                <span class="action je">Repondre</span>
+              </div>
+            </div>
+            <div class="comment">
+              <img src="/img/c6.jpg" alt="tof Joyce" />
+              <div class="single-container">
+                <span class="user"> Joyce Divina</span>
+                <span class="text"> Ikiiii 😂😂😂 </span>
+                <img class="love" id="bvg" src="/img/love.jpg" />
+              </div>
+              <div class="buttons">
+                <span class="time t3 m">21m</span> <span class="dot">·</span>
+                <span class="action liked" id="bvgg">J'aime</span> ·
+                <span class="action je">Repondre</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- le comentaire de Azareel se termine ici -->
+
+        <!-- la publication de spark commence ici -->
+
+        <input placeholder="Ecrivez un commentaire..." id="terye" required />
+        <button type="submit" id="fgtr">
+          <i class="fa-solid fa-paper-plane"></i>
+        </button>
+      </form>
+      <div style="width: 1000px; margin: 30px; background: transparent"></div>
+      <!-- Ici,il s'agit de la partie qui gere la demande et l'ajout des amies -->
+      <div class="ajout-amie" id="jukilo">
+        <div class="l-amie-a-ajouter a1">
+          <div class="tof-amie">
+            <img src="/img/ppkeliane.jpg" alt="profil de keliane " />
+          </div>
+          <div class="nom-et-caract-amie">
+            <span class="nom-amie">Samira kãe</span>
+            <span class="amie-en-commun">2 amies en commun</span>
+            <!-- il fudras mettre le favicon coresspondant a l'ajout d'amie -->
+            <div class="decion-pour-ami">
+              <span id="aja" class="aja">Ajouter ami(e)</span>
+            </div>
+          </div>
+        </div>
+        <div class="l-amie-a-ajouter a2">
+          <div class="tof-amie">
+            <img src="/img/ppperfect.jpg" alt="profil de perfect " />
+          </div>
+          <div class="nom-et-caract-amie">
+            <span class="nom-amie">Neldie Dane</span>
+            <span class="amie-en-commun">14 amies en commun</span>
+            <!-- il fudras mettre le favicon coresspondant a l'ajout d'amie -->
+            <div class="decion-pour-ami">
+              <span id="aja" class="aja">Ajouter ami(e)</span>
+            </div>
+          </div>
+        </div>
+        <div class="l-amie-a-ajouter a3">
+          <div class="tof-amie">
+            <img src="/img/pppavel.jpg" alt="profil de Pavel " />
+          </div>
+          <div class="nom-et-caract-amie">
+            <span class="nom-amie">Deslo Pavel</span>
+            <span class="amie-en-commun">4 amies en commun</span>
+            <!-- il fudras mettre le favicon coresspondant a l'ajout d'amie -->
+            <div class="decion-pour-ami">
+              <span id="aja" class="aja">Ajouter ami(e)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="voirplus">
+        Voir plus <i class="fa-sharp fa-solid fa-right-to-bracket"></i>
+      </div>
+      <div style="width: 1000px; margin: 30px; background: transparent"></div>
+      <!-- la publication et le commentaires de briana commence ici -->
+
+      <form>
+        <div class="publication">
+          <div class="profil">
+            <img
+              src="/img/ppbriana.jpg"
+              alt="profil de l'utilisateur qui publie"
+            />
+            <span class="nomu">Maëva Briana</span>
+            <span class="hg"
+              ><a href="#"><i class="fa-solid fa-ellipsis"></i></a
+              ><a href="#"> X</a></span
+            >
+            <span class="sp"
+              >Sponsorisée · <i class="fa-solid fa-earth-africa"></i>
+            </span>
+            <span class="el"></span> <span id="h">1h</span>
+          </div>
+          <div class="message">
+            <p>
+              Virer des gens toxiques de votre vie... N'est pas une perte, c'est
+              un poid en moins 😮‍💨😮‍💨
+            </p>
+          </div>
+          <div class="image">
+            <img src="/img/p1b.jpg" alt="photo qui est publier" />
+          </div>
+        </div>
+        <div class="comments">
+          <div class="counter">
+            <div class="reactions">
+              <img class="like" src="/img/like.jpg" />
+              <img class="love" src="/img/love.jpg" />
+              <img class="care" src="/img/surpris.jpg" />
+              <span id="likebriana">500k</span>
+            </div>
+            <span id="combria">31K commentaires</span>
+            <span class="dot">·</span>
+            <span id="partbria">10K partages</span>
+          </div>
+          <div class="bar">
+            <span class="react"
+              ><i class="fa fa-thumbs-o-up"></i>
+              <a class="liked">J'aime</a></span
+            >
+            <span class="react"
+              ><i class="fa fa-comment-o"></i>
+              <span id="huji">commentaires</span></span
+            >
+            <script>
+              huji.onclick = () => {
+                alert(
+                  "Briana n'autorise pas la lecture des autres commentaires !"
+                );
+              };
+            </script>
+            <span class="react"><i class="fa fa-share"></i> partager</span>
+          </div>
+          <div class="comment">
+            <img src="/img/ppsamuelito.jpg" alt="tof de soudays" />
+            <div class="single-container">
+              <span class="user"> Sāmūëlítø Pïndÿ</span>
+              <span class="text">En vrai B 😘😘 </span>
+              <img class="love" id="ghdyzjksjskzs" src="/img/love.jpg" />
+            </div>
+            <div class="buttons">
+              <span class="time t2 m">21m</span>
+              <span class="dot">·</span>
+              <span class="action liked" id="ghdyzjksjskzss">J'aime</span> ·
+              <span class="action je">Repondre</span>
+            </div>
+          </div>
+          <script>
+            ghdyzjksjskzss.onclick = () => {
+              ghdyzjksjskzs.style.display = "block";
+            };
+          </script>
+        </div>
+        <!-- le comentaire de Briana se termine ici -->
+        <input
+          placeholder="Cet utilisateur a blocker la lecture de ses commentaires..."
+          id="l656"
+          readonly
+        />
+        <button type="submit">
+          <i class="fa-solid fa-paper-plane"></i>
+        </button>
+      </form>
+
+      <!-- La publication d'Aurlie commece ici -->
+      <form>
+        <div class="publication">
+          <div class="profil">
+            <img
+              src="/img/ppaurelie.jpg"
+              alt="profil de l'utilisateur qui publie"
+            />
+            <span class="nomu">Aurélie Valdez</span>
+            <span class="hg"
+              ><a href="#"><i class="fa-solid fa-ellipsis"></i></a
+              ><a href="#"> X</a></span
+            >
+            <span class="sp"
+              >Sponsorisée · <i class="fa-solid fa-earth-africa"></i>
+            </span>
+            <span class="el"></span> <span id="h">1j</span>
+          </div>
+          <div class="message">
+            <p>
+              Tu me bourde, tu reçois.
+              <br />
+              <a href="#">#Tiger Spark</a> <a href="#">#Abdourahman Abbo</a
+              ><a href="#">#Neldie Dane</a>
+            </p>
+          </div>
+          <div class="image">
+            <video src="/img/video.mp4" controls class="v1">
+              c'est ma video
+            </video>
+          </div>
+        </div>
+        <div class="comments">
+          <div class="counter">
+            <div class="reactions">
+              <img class="like" src="/img/like.jpg" />
+              <img class="love" src="/img/love.jpg" />
+              <img class="care" src="/img/surpris.jpg" />
+              <span id="likeaza">20k</span>
+            </div>
+            <span id="comaza">83K commentaires</span>
+            <span class="dot">·</span>
+            <span id="pataza">81K partages</span>
+          </div>
+          <div class="bar">
+            <span class="react"
+              ><i class="fa fa-thumbs-o-up"></i>
+              <a class="liked">J'aime</a></span
+            >
+            <span class="react"
+              ><i class="fa fa-comment-o"></i>
+              <span id="dfret">commentaires</span></span
+            >
+            <span class="react"><i class="fa fa-share"></i> partager</span>
+          </div>
+          <div class="comment">
+            <img src="/img/ppperfect.jpg" alt="tof perfect" />
+            <div class="single-container">
+              <span class="user"> Neldie Dane</span>
+              <span class="text"> 🤣🤣🤣🤣🤣🤣🤣🤣🤣 </span>
+              <img class="love" id="hgyue" src="/img/love.jpg" />
+            </div>
+            <div class="buttons">
+              <span class="time t2 m">21m</span>
+              <span class="dot">·</span>
+              <span class="action liked" id="hgyuee">J'aime</span> ·
+              <span class="action je">Repondre</span>
+              <script>
+                hgyuee.onclick = () => {
+                  hgyue.style.display = "block";
+                };
+              </script>
+            </div>
+          </div>
+          <div class="comment ook">
+            <img src="/img/profil.png" alt="tof de l'utilisateur" />
+            <div class="single-container">
+              <span class="user" id="hfyu">Audrey Dior</span>
+              <span class="text" id="iosk"> </span>
+              <img class="love" id="lgs8" src="/img/love.jpg" />
+            </div>
+            <div class="buttons">
+              <span class="time t2 m">A l'instant</span>
+              <span class="dot">·</span>
+              <span class="action liked" id="lgs88">J'aime</span> ·
+              <span class="action je">Repondre</span>
+            </div>
+          </div>
+          <div id="dfrett">
+            <div class="comment">
+              <img src="/img/oip.jpg" alt="tof de Audrey Dior" />
+              <div class="single-container">
+                <span class="user">Audrey Dio </span>
+                <span class="text">
+                  Hmm sans rancune cc😁. Mais tu as ete adorable
+                </span>
+                <img class="love" id="kkp" src="/img/love.jpg" />
+              </div>
+              <div class="buttons">
+                <span class="time t1 m">18m</span> <span class="dot">·</span>
+                <span class="action liked selected" id="kkpp">J'aime</span> ·
+                <span class="action je">Repondre</span>
+              </div>
+            </div>
+            <div class="comment">
+              <img src="/img/1713019405250.jpg" alt="tof de Charles CF" />
+              <div class="single-container">
+                <span class="user">Charles CF</span>
+                <span class="text"> Interaissante 😍 </span>
+                <img class="love" id="lgs9" src="/img/love.jpg" />
+              </div>
+              <div class="buttons">
+                <span class="time t1 m">18m</span> <span class="dot">·</span>
+                <span class="action liked selected" id="lgs99">J'aime</span> ·
+                <span class="action je">Repondre</span>
+              </div>
+            </div>
+            <div class="comment">
+              <img src="/img/tui.jpg" alt="tof de Christelle Betcy " />
+              <div class="single-container">
+                <span class="user">Christelle Betcy</span>
+                <span class="text"> 🤣🤣🤣🤣🤣🤣🤣</span>
+                <img class="love" id="juif" src="/img/love.jpg" />
+              </div>
+              <div class="buttons">
+                <span class="time t1 m">18m</span> <span class="dot">·</span>
+                <span class="action liked selected" id="juiff">J'aime</span> ·
+                <span class="action je">Repondre</span>
+              </div>
+            </div>
+            <div class="comment reply">
+              <img src="/img/ppperfect.jpg" alt="autre tof perfect" />
+              <div class="single-container">
+                <span class="user">Neldie Dane</span>
+                <span class="text"> Hmm 😉 </span>
+                <img class="love" id="dfr" src="love.jpg" />
+              </div>
+              <div class="buttons">
+                <span class="time t4 m">18m</span> <span class="dot">·</span>
+                <span class="action liked" id="dfrr">J'aime</span> ·
+                <span class="action je">Repondre</span>
+              </div>
+            </div>
+            <div class="comment">
+              <img src="/img/c6.jpg" alt="tof Joyce" />
+              <div class="single-container">
+                <span class="user"> Joyce Divina</span>
+                <span class="text"> Ikiiii 😂😂😂 </span>
+                <img class="love" id="bvg" src="/img/love.jpg" />
+              </div>
+              <div class="buttons">
+                <span class="time t3 m">21m</span> <span class="dot">·</span>
+                <span class="action liked" id="bvgg">J'aime</span> ·
+                <span class="action je">Repondre</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script>
+          dfret.onclick = () => {
+            dfrett.style.display = "block";
+            dfret.textContent = "Commenter";
+          };
+        </script>
+
+        <!-- le comentaire de Aurelie se termine ici -->
+
+        <input placeholder="Ecrivez un commentaire..." id="terye" required />
+        <button type="submit" id="fgtr">
+          <i class="fa-solid fa-paper-plane"></i>
+        </button>
+      </form>
+
+      <!-- la publication de samuelito commence ici -->
+      <form>
+        <div class="publication">
+          <div class="profil">
+            <img
+              src="/img/ppsamuelito.jpg"
+              alt="profil de l'utilisateur qui publie"
+            />
+            <span class="nomu">Sāmūëlítø Pïndÿ</span>
+            <span class="hg"
+              ><a href="#"><i class="fa-solid fa-ellipsis"></i></a
+              ><a href="#"> X</a></span
+            >
+            <span class="sp"
+              >Sponsorisée · <i class="fa-solid fa-earth-africa"></i>
+            </span>
+            <span class="el"></span> <span id="h">1h</span>
+          </div>
+          <div class="message">
+            <p>
+              Me permettez vous de saturer un instant? <br />
+              Ntk je demande pas votre avis 😁😁 <br />Likez et partager mes
+              amour😍😍
+            </p>
+          </div>
+         
+            <div class="samuelito">
+              <span class="sam1">
+                <img src="/img/pub1s.png" alt="image publier de samuelito 1">
+              </span>
+              <span class="sam2">
+                <img src="/img/pub2s.jpg" alt="image publier de samuelito 2">
+
+              </span>
+              <span class="sam3">
+                <img src="/img/pub3s.jpg" alt="image publier de samuelito 3">
+              </span>
+              <span class="sam4">
+                <img src="/img/pub4s.jpg" alt="image publier de samuelito 4">
+              </span>
+              <span id="sam5"><div>+15</div></span>
+            </div>
+      
+        </div>
+        <div class="comments">
+          <div class="counter">
+            <div class="reactions">
+              <img class="like" src="/img/like.jpg" />
+              <img class="love" src="/img/love.jpg" />
+              <img class="care" src="/img/surpris.jpg" />
+              <span id="likebriana">500k</span>
+            </div>
+            <span id="combria">31K commentaires</span>
+            <span class="dot">·</span>
+            <span id="partbria">10K partages</span>
+          </div>
+          <div class="bar">
+            <span class="react"
+              ><i class="fa fa-thumbs-o-up"></i>
+              <a class="liked">J'aime</a></span
+            >
+            <span class="react"
+              ><i class="fa fa-comment-o"></i>
+              <span id="huji">commentaires</span></span
+            >
+            <script>
+              huji.onclick = () => {
+                alert(
+                  "Pindy n'autorise pas la lecture des autres commentaires !"
+                );
+              };
+            </script>
+            <span class="react"><i class="fa fa-share"></i> partager</span>
+          </div>
+          <div class="comment">
+            <img src="/img/ppsamuelito.jpg" alt="tof de soudays" />
+            <div class="single-container">
+              <span class="user"> </span>
+              <span class="text">En vrai B 😘😘 </span>
+              <img class="love" id="ghdyzjksjskzss" src="/img/love.jpg" />
+            </div>
+            <div class="buttons">
+              <span class="time t2 m">21m</span>
+              <span class="dot">·</span>
+              <span class="action liked" id="ghdyzjksjskzsss">J'aime</span> ·
+              <span class="action je">Repondre</span>
+            </div>
+          </div>
+          <script>
+            ghdyzjksjskzsss.onclick = () => {
+              ghdyzjksjskzss.style.display = "block";
+            };
+          </script>
+        </div>
+        <!-- le comentaire de Briana se termine ici -->
+        <input
+          placeholder="Cet utilisateur a blocker la lecture de ses commentaires..."
+          id="l656"
+          readonly
+        />
+        <button type="submit">
+          <i class="fa-solid fa-paper-plane"></i>
+        </button>
+      </form>
+
+      <!-- La promotion de mon compte whatsap comence ici -->
+      <form>
+        <div class="publication">
+          <div class="profil">
+            <img
+              src="/img/ppmaestro.jpg"
+              alt="profil de l'utilisateur qui publie"
+            />
+            <span class="nomu">Lė Maętro</span>
+            <span class="hg"
+              ><a href="#"><i class="fa-solid fa-ellipsis"></i></a
+              ><a href="#"> X</a></span
+            >
+            <span class="sp"
+              >Sponsorisée · <i class="fa-solid fa-earth-africa"></i>
+            </span>
+            <span class="el"></span> <span id="h">15h</span>
+          </div>
+          <div class="message">
+            <p>
+              Pour vos besoin de location d'appareil de photographie, Creation de compte monaitiser, Controle d'appareil de votre conjoind etc..
+            </p>
+          </div>
+        <!-- ici je dois faire le whatsap proprement dit -->
+        <div class="whatsap-div">
+          <div class="image1">
+            <img src="/img/c6.jpg" alt="image pour whatsap1">
+          </div>
+          <div class="image2">
+            <img src="/img/c6.jpg" alt="image pour whatsap2">
+          </div>
+          <div class="image3 " >
+            <img src="/img/c6.jpg" alt="image pour whatsap3">
+          </div>
+          <div class="footer" id="Ecrivez">
+            <span class="what">WHATSAPP</span>
+            <span class="mon-nom-whatsap">Warano</span>
+            <span class="abreger">Wa02</span>
+            <div class="cardre-pour-symbole-de-whatsap">
+              <i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/237621092130" style="text-decoration: none;color: #000;">WHATSAPP</a>
+            </div>
+          </div>
+          <script>
+            Ecrivez.onclick=()=>{
+              window.location.href="https://wa.me/237621092130";
+            }
+          </script>
+        </div>
+        </div>
+        <div class="comments">
+          <div class="counter">
+            <div class="reactions">
+              <img class="like" src="/img/like.jpg" />
+              <img class="love" src="/img/love.jpg" />
+              <img class="care" src="/img/surpris.jpg" />
+              <span id="kdldkd">156</span>
+            </div>
+            <span>31 commentaires</span>
+            <span class="dot">·</span>
+            <span>10K partages</span>
+          </div>
+          <div class="bar">
+            <span class="react"
+              ><i class="fa fa-thumbs-o-up"></i>
+              <a class="liked">J'aime</a></span
+            >
+            <span class="react"
+              ><i class="fa fa-comment-o"></i>
+              <span >commentaires</span></span
+            >
+            <span class="react"><i class="fa fa-share"></i> partager</span>
+          </div>
+          <div class="comment">
+            <img src="/img/ppkane.jpg" alt="tof de Kane" />
+            <div class="single-container">
+              <span class="user">Ayi Kane </span>
+              <span class="text"> whatsap c'est mieux</span>
+              <img class="love"  src="/img/love.jpg" />
+            </div>
+            <div class="buttons">
+              <span class="time t2 m">15h</span>
+              <span class="dot">·</span>
+              <span class="action liked" >J'aime</span> ·
+              <span class="action je">Repondre</span>
+            </div>
+          </div>
+      
+      </form>
+      <div id="menu">
+        <div class="men">
+          <span class="toyiboyi1" id="toyiboyi1">
+            <i class="fa-sharp fa-solid fa-right-to-bracket"></i>
+            <strong style="font-size: 18px">Menu</strong>
+          </span>
+          <span class="ser"><i class="fa-solid fa-magnifying-glass"></i></span>
+          <span class="b0">
+            <img src="/img/profil.png" alt="profil d'utilisateur" />
+            <span id="username1">Warano</span>
+          </span>
+          <div class="b1">
+            <span class="plus">+</span>
+            <p
+              style="
+                position: absolute;
+                font-size: 14px;
+                left: 32px;
+                top: 8px;
+                text-align: center;
+              "
+            >
+              Crée un autre profil
+            </p>
+          </div>
+          <span class="ss"></span>
+          <span class="dec">
+            <img src="/img/c.png" class="like gty" />
+            <img src="/img/c6.jpg" class="love hju" />
+            <span class="sd1">Changer de compte</span>
+            <span class="sd1 fk">></span>
+          </span>
+          <div class="b2">
+            <img
+              src="/img/love.jpg"
+              alt="for love"
+              style="
+                width: 30px;
+                height: 30px;
+                position: relative;
+                border-radius: 5px;
+                object-fit: cover;
+                float: left;
+                top: 2px;
+                left: 5px;
+              "
+            />
+            <p
+              style="
+                position: relative;
+                font-size: 15px;
+                left: 20px;
+                text-align: left;
+                top: 5px;
+              "
+            >
+              Inviter des amies
+            </p>
+          </div>
+          <div class="dessou">
+            <span class="gauche d1">
+              <img src="/img/reel.jpeg" alt="image for reel" />
+              <p>Réels</p>
+            </span>
+            <span class="droite d1">
+              <img src="/img/messenger.jpeg" alt="Image for messenger icon" />
+              <p>Méssage</p>
+            </span>
+            <span class="gauche d2">
+              <img src="/img/groupe.png" alt="That's image for groupe icon" />
+              <p>Groupes</p>
+            </span>
+            <span class="droite d2">
+              <img src="/img/watch.png" alt="just for videos" />
+              <p>Vidéos</p>
+            </span>
+            <span class="gauche d3">
+              <img src="/img/live.png" alt="image for live icon" />
+              <p>Lives</p>
+            </span>
+            <span class="droite d3">
+              <img src="/img/market.png" alt="market place icon" />
+              <p>Marketplace</p>
+            </span>
+            <span class="gauche d4">
+              <img src="/img/page.jpeg" alt="page profil icon" />
+              <p>Pages</p>
+            </span>
+            <span class="droite d4">
+              <img src="" alt="for enregistrements" />
+              <p>Enregistrements</p>
+            </span>
+            <span class="gauche d5">
+              <img src="" alt="souvenir icon" />
+              <p>Souvenir</p>
+            </span>
+            <span class="droite d5">
+              <img src="" alt="For even" />
+              <p>Evenement</p>
+            </span>
+            <span class="gauche d6">
+              <img src="" alt="for play" />
+              <p>Jeux</p>
+            </span>
+            <span class="droite d6">
+              <img src="" alt="icon fantasy game" />
+              <p>Jeux de fantasy</p>
+            </span>
+            <span class="gauche d7">
+              <img src="" alt="for meta verified" />
+              <p>Meta verified</p>
+            </span>
+            <span class="droite d7">
+              <img src="" alt="files icon" />
+              <p>Fils</p>
+            </span>
+          </div>
+          <div
+            style="
+              position: relative;
+              width: 500px;
+              height: 0.5px;
+              background: gray;
+              top: 845px;
+            "
+          ></div>
+          <div id="parametre">
+            <span class="dec y" style="cursor: pointer">
+              <img
+                src="/img/parametre.png"
+                alt="image for parameter"
+                class="like"
+                style="width: 20px; height: 20px"
+              />
+              <!-- Il faudras changer l'icon de parametre pour un affichage plu stilé -->
+              <span class="sd1" style="font-size: 17px; left: 25px; top: 1px"
+                >Paramtre et confidentialiter</span
+              >
+              <span class="sd1 fk" id="sd1">></span>
+            </span>
+            <div id="jki">
+              <div class="po po1" id="po1">
+                <img src="/img/parametre.png" alt="for parameter" />
+                <p>Parametre</p>
+              </div>
+              <div class="po po2" id="po1">
+                <img src="c2.jpg" alt="for command and payement" />
+                <p>Commendes et paiements</p>
+              </div>
+              <div class="po po3" id="po1" style="position: relative">
+                <img src="/img/c1.jpg" alt="for change luminosity of a pages" />
+                <p>Mode sombre</p>
+                <span id="mds">
+                  <span id="msd"></span>
+                </span>
+              </div>
+              <div class="po po4" id="po1">
+                <img src="/img/c2.jpg" alt="for change language" />
+                <p>Langue</p>
+              </div>
+              <div class="po po5" id="po1">
+                <img src="/img/c2.jpg" alt="for save data" />
+                <p>Mode Economie de données</p>
+                <span id="mds">
+                  <span id="msd"></span>
+                </span>
+              </div>
+
+              <div class="po po6" id="po1">
+                <img src="/img/c2.jpg" alt="for formidable" />
+                <p>Libérer de lespace</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          style="
+            position: relative;
+            width: 500px;
+            height: 0.5px;
+            background: gray;
+            top: 897px;
+          "
+        ></div>
+        <div id="help">
+          <span class="dec y t" style="cursor: pointer">
+            <img
+              src="/img/c6.jpg"
+              alt="image for parameter"
+              class="like"
+              style="width: 20px; height: 20px"
+            />
+            <!-- Il faudras changer l'icon de centre d'aide et d'assistancepour une page plus stylé -->
+            <span class="sd1" style="font-size: 17px; left: 25px; top: 1px"
+              >Aide et assistance</span
+            >
+            <span class="sd1 fk" id="sd8">></span>
+          </span>
+          <div class="wxt">
+            <span class="lo lo1">
+              <img src="/img/c6.jpg" alt="im for help" />
+              <p>Aide</p>
+            </span>
+            <span class="lo lo2">
+              <img src="/img/c6.jpg" alt="im for help" />
+              <p>Espace Assintance</p>
+            </span>
+            <span class="lo lo3">
+              <img src="/img/c6.jpg" alt="im for information" />
+              <p>A propos</p>
+            </span>
+            <span class="lo lo4">
+              <img
+                src="/img/c6.jpg"
+                alt="im for show probleme of a page to me warano"
+              />
+              <p id="gjut">Signaler un problème</p>
+              <script>
+                gjut.onclick = () => {
+                  window.location.href = "mailto:carineteoi@gmail.com";
+                };
+              </script>
+            </span>
+            <span class="lo lo5">
+              <img src="/img/c6.jpg" alt="im for Securité" />
+              <p>Securité</p>
+            </span>
+          </div>
+          <div class="lo lo6" id="foot">
+            <img src="/img/s2.jpg" alt="for logout" />
+            <p>Déconnexion</p>
+          </div>
+        </div>
+        <div
+          style="
+            position: relative;
+            width: 500px;
+            height: 0.5px;
+            background: gray;
+            top: 580px;
+          "
+        ></div>
+      </div>
+    </div>
+
+    <script src="/js/script2.js"></script>
+  </body>
+</html>
